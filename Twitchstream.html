@@ -1,0 +1,141 @@
+<!DOCTYPE html><html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/a8ead11dd9.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<title>Twitch Stream</title>
+
+
+
+
+
+
+
+
+<body>
+      <!--Nav Bar-->
+  <!-- Image and text -->
+<!-- Just an image -->
+<nav class="navbar navbar-light" height="100px" style="background-color:rgb(146,9,23)">
+  
+    <a class="navbar-brand" href="#">
+      
+      <img src="output-onlinepngtools.png" width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark">
+      
+    </a>
+    <div class="container">
+      <div class="row justify-content-center" id="headerText">
+        <h1 class="text-dark-50 col-lg-12" style="background-color: rgb(146,9,23);"> B.A. On The Beat</h1>
+      </div>
+    </div>
+  </nav>
+      <nav  class="navbar navbar-expand-lg navbar-light text-secondary border border-dark ">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <span class="navbar-collapse collapse"></span>
+                <a class="nav-link" href="baotb.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutMe.html">About </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Twitchstream.html">Stream </a>
+                </li> 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Shop
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="GBTC.html">GBTC</a>
+                    <a class="dropdown-item" href="NCHApparel.html">NCH Apparel</a>
+                    <div class="dropdown-divider"></div>
+                  </div>
+                </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="News.html">
+                    News
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+              </li>
+            </ul>
+          
+          </div>
+        </nav>
+    
+    <!--End of Nav-->
+
+    <!--Twitch Player-->
+        <!-- Add a placeholder for the Twitch embed -->
+        <br>
+        <br>
+        <h1 style="text-align: center;">Follow Me On Twitch!</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    <center><iframe id="twitchPlayer" src="https://player.twitch.tv/?baonthabeat"
+        height="650" width="650" frameborder="frameborder" scrolling="scrolling"
+        allowfullscreen="allowfullscreen">
+    </iframe></center>
+    <script type="text/javascript">
+        new Twitch.Embed("twitchPlayer",render() {
+          width: 854,
+          height: 480,
+          channel: "BAonthabeat",
+          parent: [parent="baotb.html"]
+        });
+      </script>
+
+
+
+
+    <!-- Footer -->
+    <main role="main" class="flex-shrink-0">
+        <div class="container-fluid">
+            <h1 class="mt-5"></h1>
+            <p class="lead"></p>
+            <p><a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/sticky-footer-navbar/"></a> </p>
+            <div class="d-inline-block float-right">
+                <a class="tw-ic">
+                    <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a class="fb-ic">
+                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                    <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+            </div>
+        </div>
+    </main>
+          
+    <footer class="footer mt-auto py-3" style="background-color: rgb(146,9,23);">
+        <div class="container-fluid">
+            <span class="text-muted">B.A. On The Beat GBTC LLC 2020 </span>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+</html>
