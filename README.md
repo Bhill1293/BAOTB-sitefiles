@@ -1,2 +1,2 @@
 # BAOTB-sitefiles
-HTML &amp; JS files for BAonthebeat.com
+HTML &amp; JS files for (first draft) of BAonthebeat.com
